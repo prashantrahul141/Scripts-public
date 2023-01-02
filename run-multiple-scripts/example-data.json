@@ -1,0 +1,21 @@
+//  Rename file to data.json
+
+{
+  "SCRIPTS": [
+    {
+      "NAME": "Name of the process --optional",
+      "PREFIX_ARGS": [
+        "args which will be called before cding into the LOCATION",
+        "use to active env or setup"
+      ],
+      "LOCATION": "will be called to cd into this directory",
+      "SCRIPT": "actual script which needs to run with args"
+    },
+    {
+      "NAME": "Telegram bot",
+      "PREFIX_ARGS": ["source path//to//env//Scripts//activate"],
+      "LOCATION": "path//to//src//directory",
+      "SCRIPT": "python main.py"
+    }
+  ]
+}
