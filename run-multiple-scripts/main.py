@@ -4,6 +4,9 @@ from typing import TypedDict
 import json
 
 
+# This script runs all the processes using ProcessPoolExecutor
+# remove any print statements (from your scripts) to avoid a cmd popup while its running.
+
 class ScriptsType(TypedDict):
     NAME: str
     PREFIX_ARGS: list[str]
@@ -38,5 +41,4 @@ def startProcess(cmd_: str):
 if __name__ == '__main__':
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for _script in _scripts:
-            print(f"[MAIN] Starting \"{_script[0]}\" Process")
             f = executor.submit(startProcess, _script[1])
