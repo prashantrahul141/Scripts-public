@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 
 run-multiple-scripts/data.json
+
+run-multiple-scripts-cpp/binaries/data.json
